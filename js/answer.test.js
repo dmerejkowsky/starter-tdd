@@ -1,8 +1,11 @@
-const getAnswer = require('./answer')
+import assert from "node:assert";
+import { test, describe } from "node:test";
 
-describe('getting answers', () => {
-  test('it returns 42', () => {
-    const res = getAnswer()
-    expect(res).toBe(42)
-  })
-})
+import getAnswer from "./answer.js";
+
+describe("getting answers", () => {
+  test("it returns 42", () => {
+    const res = getAnswer();
+    assert.strictEqual(res, 42);
+  });
+});
