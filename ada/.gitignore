@@ -1,0 +1,6 @@
+*.a
+*.o
+*.ali
+lib/aunit*
+obj/
+

@@ -1,0 +1,8 @@
+test:
+	gprbuild -p -Pharness
+	obj/test_hello
+
+clean:
+	-gprclean -Pharness
+	-gprclean -Phello/hello
+	rm -rf obj hello/obj
